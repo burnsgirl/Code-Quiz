@@ -1,9 +1,9 @@
 # Code-Quiz
 
 ![image](https://user-images.githubusercontent.com/77900224/119238778-b37c3800-bb12-11eb-877e-4f69d36ffb25.png)
-two![image](https://user-images.githubusercontent.com/77900224/119240404-4a4df200-bb1d-11eb-8b7b-8894e907528a.png)
-three![image](https://user-images.githubusercontent.com/77900224/119240436-81240800-bb1d-11eb-8bcd-97956cd333b0.png)
-four![image](https://user-images.githubusercontent.com/77900224/119240439-85502580-bb1d-11eb-915b-48b4ad2080eb.png)
+![image](https://user-images.githubusercontent.com/77900224/119240404-4a4df200-bb1d-11eb-8b7b-8894e907528a.png)
+![image](https://user-images.githubusercontent.com/77900224/119240436-81240800-bb1d-11eb-8bcd-97956cd333b0.png)
+![image](https://user-images.githubusercontent.com/77900224/119240439-85502580-bb1d-11eb-915b-48b4ad2080eb.png)
 
 
 https://burnsgirl.github.io/Code-Quiz/
