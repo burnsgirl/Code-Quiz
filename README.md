@@ -1,8 +1,12 @@
 # Code-Quiz
 
-<img src="../Code-Quiz/Assets/Images/one.png">
+<img src="assets/images/one.png">
 <img src="../Code-Quiz/Assets/Images/two.png">
 <img src="../Code-Quiz/Assets/Images/three.png">
+
+![image](https://user-images.githubusercontent.com/77900224/119238778-b37c3800-bb12-11eb-877e-4f69d36ffb25.png)
+one![image](https://user-images.githubusercontent.com/77900224/119238787-bd9e3680-bb12-11eb-8144-f169ca55e345.png)
+
 
 https://burnsgirl.github.io/Code-Quiz/
 https://github.com/burnsgirl/Code-Quiz
