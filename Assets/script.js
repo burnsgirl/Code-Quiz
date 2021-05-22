@@ -17,11 +17,13 @@ var scoreList = document.getElementById("scorelist");
 var listName = document.getElementById("listname");
 var listScore = document.getElementById("listscore");
 var replayBtn = document.getElementById("replaybtn");
+var organizeList = document.createElement("ol");
+scoreList.appendChild(organizeList)
 var userChoice = choicesEl;
 var currentIndex = 0;
 var scoreEl = 0;
 var secondsLeft = 60;
-userScore = [];
+var userScore = JSON.parse(localStorage.getItem("userScore")) || [];
 i= 0;
 var x = [       
         ['What is the correct linkage for JavaScript?', ['SRC', 'SCRIPT', 'LINK', 'JAVASCRIPT'], 'SCRIPT'],
@@ -120,7 +122,7 @@ function endQuiz () {
                 timerEl.style.display = "none";
                 endEl.style.display = "block";
                 score.innerHTML = scoreEl;
-                saveScore();
+                savebtn.addEventListener("click", saveScore);
         }
 }
 
@@ -140,25 +142,34 @@ function setTime () {
 }
 
 // User input to save score
-function saveScore () {
-        var initials = initialsEl.value;
-        var userScore = scoreEl + "" + initials;
+function saveScore() {
+        endEl.style.display = "block";
+        console.log("this is going in ")
+        var userS = {
+                scores: scoreEl, 
+                initials:initialsEl.value
+        };
+        userScore.push(userS);
         localStorage.setItem("userScore", JSON.stringify(userScore));
+       
+        renderScore();
         
 };
 // Showing the score on score list
 function renderScore () {
+        console.log(userScore)
         scoreList.style.display = "block";
         endEl.style.display = "none";
-        var userScore = scoreEl + "" + initials;
-        JSON.parse(localStorage.getItem("userScore" + userScore));
-        
+        scoreList.removeChild(organizeList);
+        organizeList = document.createElement("ol");
+        scoreList.appendChild(organizeList)  
 
-        document.getElementById("listscore").innerHTML = "Score: " + scoreEl;
-        document.getElementById("listname").innerHTML = "Player: " + initials.value;
-                
+        for(let i = 0; i < userScore.length; i++){
+                listEl= document.createElement("li")
+                listEl.innerHTML = userScore[i].initials +" || " + scoreEl
+                organizeList.appendChild(listEl)
+        }
+       
 };
 
-savebtn.addEventListener("click", saveScore);
 
-savebtn.addEventListener("click", renderScore);
