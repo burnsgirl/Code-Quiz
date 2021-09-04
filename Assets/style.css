@@ -31,8 +31,7 @@ p {
 }
 
 #questions {
-    padding-left: 33%;
-    padding-top: 10px;
+    text-align: center;
     display: block;
     font-size: 30px;
 
