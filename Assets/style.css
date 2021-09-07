@@ -34,15 +34,25 @@ p {
     text-align: center;
     display: block;
     font-size: 30px;
+}
 
+.container {
+    height: 200px;
+    position: relative;
 }
 
 #choices {
-    display: block;
-    height: 30px;
-    width: 200px;
-    padding-left: 42%;
-    padding-top: 2%;
+    position: relative;
+    top: 74px;
+    left: 46px;
+}
+
+.question-btn {
+   margin: 10px;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 button {
